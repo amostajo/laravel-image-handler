@@ -1,0 +1,30 @@
+{
+    "name": "amsgames/laravel-image-handler",
+    "description": "Package provides laravel with Image Handler class, perfect to create thumbs, resize or crop images.",
+    "license": "MIT",
+    "keywords": ["image","images","handling","Handler","laravel","crop","thumb","thumbs","resize"],
+    "authors": [
+        {
+            "name": "Alejandro Mostajo",
+            "email": "amostajo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "illuminate/console": "~5.0",
+        "illuminate/support": "~5.0",
+        "eventviva/php-image-resize": "1.5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.1",
+        "mockery/mockery": "dev-master",
+        "illuminate/database": "~5.0",
+        "sami/sami": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amostajo\\LaravelImageHandler\\": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
