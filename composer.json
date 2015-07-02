@@ -1,5 +1,5 @@
 {
-    "name": "amsgames/laravel-image-handler",
+    "name": "amostajo/laravel-image-handler",
     "description": "Package provides laravel with Image Handler class, perfect to create thumbs, resize or crop images.",
     "license": "MIT",
     "keywords": ["image","images","handling","Handler","laravel","crop","thumb","thumbs","resize"],
