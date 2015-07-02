@@ -14,7 +14,7 @@ Works with **Laravel 5.1**.
 Add
 
 ```json
-"amsgames/laravel-image-handler": "v1.0.0"
+"amostajo/laravel-image-handler": "v1.0.0"
 ```
 
 to your `composer.json`. Then run `composer install` or `composer update`.
