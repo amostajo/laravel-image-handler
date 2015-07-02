@@ -52,7 +52,7 @@ $url = ImageHandler::thumb($imageUrl);
 The returned `$url` can be placed in a `img` html tag like this (sample using blade):
 
 ```html
-<img src="{{ ImageUrl::thumb($imageUrl) }}"/>
+<img src="{{ ImageHandler::thumb($imageUrl) }}"/>
 ```
 
 ![Thumb](http://s14.postimg.org/6j0rz20ql/beach_100x100.jpg)
@@ -60,7 +60,7 @@ The returned `$url` can be placed in a `img` html tag like this (sample using bl
 The thumb created will always be cropped to fit the desired size. By default, the thumb will be cropped to the width and height specified in the configuration file, although you can easily set these as parameters:
 
 ```html
-<img src="{{ ImageUrl::thumb($imageUrl, 800, 180) }}"/>
+<img src="{{ ImageHandler::thumb($imageUrl, 800, 180) }}"/>
 ```
 
 ![Thumb](http://s22.postimg.org/wvcf9ny81/beach_800x180.jpg)
@@ -77,13 +77,13 @@ $url = ImageHandler::height($imageUrl);
 ```
 
 ```html
-<img src="{{ ImageUrl::width($imageUrl, 350) }}"/>
+<img src="{{ ImageHandler::width($imageUrl, 350) }}"/>
 ```
 
 ![Thumb](http://s9.postimg.org/z3nppwyz3/sheep_350x.jpg)
 
 ```html
-<img src="{{ ImageUrl::height($imageUrl, 350) }}"/>
+<img src="{{ ImageHandler::height($imageUrl, 350) }}"/>
 ```
 
 ![Thumb](http://s30.postimg.org/mi9f00ekh/sheep_x350.jpg)
