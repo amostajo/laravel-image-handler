@@ -1,7 +1,9 @@
 IMAGE HANDLER (for Laravel 5)
 --------------------------------
 
-Image handling solution for [Laravel 5](http://laravel.com/), works with **Laravel 5.1**.
+Image handling solution for [Laravel 5](http://laravel.com/), creates thumbs on the fly, handles image cropping, upscaling and resizing.
+
+Works with **Laravel 5.1**.
 
 ## Installation
 
@@ -29,6 +31,8 @@ Then add
     
 in the `aliases` array.
 
+Copy and rename the config file `[package]\config\config.php` to your laravel's config directory `[root]\config\image.php`.
+
 ## Usage
 
 Creating a thumb for an image have never been this easy:
@@ -38,6 +42,8 @@ Creating a thumb for an image have never been this easy:
 // From either your own website or from an external source.
 $url = ImageHandler::thumb($imageUrl);
 ```
+
+**ImageHandler** will actually create a thumb and place it in `public/thumbs` directory.
 
 The returned `$url` can be placed in a `img` html tag like this (sample using blade):
 
@@ -88,7 +94,7 @@ This package is free software distributed under the terms of the MIT license.
 
 ## Additional Information
 
-This package uses the official [php-image-resize](https://github.com/eventviva/php-image-resize) package.
+This package uses [php-image-resize](https://github.com/eventviva/php-image-resize).
 
 ### Image credits
  
