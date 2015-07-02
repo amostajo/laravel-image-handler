@@ -18,31 +18,31 @@ use Illuminate\Support\Facades\URL;
 
 class ImageHandler
 {
-    /**
-     * Laravel application
-     *
-     * @var \Illuminate\Foundation\Application
-     */
-    public $app;
+	/**
+	 * Laravel application
+	 *
+	 * @var \Illuminate\Foundation\Application
+	 */
+	public $app;
 
-    /**
-     * Create a new confide instance.
-     *
-     * @param \Illuminate\Foundation\Application $app
-     *
-     * @return void
-     */
-    public function __construct($app)
-    {
-        $this->app = $app; Cache::flush();
-        
-        $path = public_path() . Config::get('image.thumbs_folder');
-        
-        if (!File::isWritable($path))
+	/**
+	 * Create a new confide instance.
+	 *
+	 * @param \Illuminate\Foundation\Application $app
+	 *
+	 * @return void
+	 */
+	public function __construct($app)
+	{
+		$this->app = $app;
+
+		$path = public_path() . Config::get('image.thumbs_folder');
+
+		if (!File::isWritable($path))
 		{
-		    File::makeDirectory($path);
+			File::makeDirectory($path);
 		}
-    }
+	}
 
 	/**
 	 * Returns a thumb url based on the url an size provided.
