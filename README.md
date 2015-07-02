@@ -1,6 +1,10 @@
 IMAGE HANDLER (for Laravel 5)
 --------------------------------
 
+[![Latest Stable Version](https://poser.pugx.org/amostajo/laravel-image-handler/v/stable)](https://packagist.org/packages/amostajo/laravel-image-handler)
+[![Total Downloads](https://poser.pugx.org/amostajo/laravel-image-handler/downloads)](https://packagist.org/packages/amostajo/laravel-image-handler)
+[![License](https://poser.pugx.org/amostajo/laravel-image-handler/license)](https://packagist.org/packages/amostajo/laravel-image-handler)
+
 Image handling solution for [Laravel 5](http://laravel.com/), creates thumbs on the fly, handles image cropping, upscaling and resizing.
 
 Works with **Laravel 5.1**.
