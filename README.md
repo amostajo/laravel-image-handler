@@ -29,14 +29,6 @@ Then add
     
 in the `aliases` array.
 
-Create a new folder under your `directory` and call it `thumbs`, the final path should look like
-
-```bash
-[root]\public\thumbs
-```
-
-Here is were the created thumbs will be located.
-
 ## Usage
 
 Creating a thumb for an image have never been this easy:
@@ -79,7 +71,6 @@ $url = ImageHandler::height($imageUrl);
 ```
 
 ![Thumb](http://s9.postimg.org/z3nppwyz3/sheep_350x.jpg)
-```
 
 ```html
 <img src="{{ ImageUrl::height($imageUrl, 350) }}"/>
@@ -98,3 +89,11 @@ This package is free software distributed under the terms of the MIT license.
 ## Additional Information
 
 This package uses the official [php-image-resize](https://github.com/eventviva/php-image-resize) package.
+
+### Image credits
+ 
+[Beach](http://beachgrooves.com/wp-content/uploads/2014/07/beach.jpg)
+Taken from http://beachgrooves.com on 1st of July of 2015.
+
+[Sheep](http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/4/11/1397210130748/Spring-Lamb.-Image-shot-2-011.jpg)
+Taken from https://guim.co.uk on 1st of July of 2015.
